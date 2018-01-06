@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { MaxHeaderComponent } from './max-header/max-header.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaxHeaderComponent
   ],
   imports: [
     BrowserModule
