@@ -7,11 +7,13 @@ import {MaxHeaderComponent} from './max-header/max-header.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatSidenavModule, MatTabsModule} from '@angular/material';
+import { MaxPortadaComponent } from './max-portada/max-portada.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MaxHeaderComponent
+    MaxHeaderComponent,
+    MaxPortadaComponent
   ],
   imports: [
     BrowserModule,
