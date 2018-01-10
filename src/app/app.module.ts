@@ -3,23 +3,27 @@ import {NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
-import {MaxHeaderComponent} from './max-header/max-header.component';
+
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatSidenavModule, MatTabsModule} from '@angular/material';
-import { MaxPortadaComponent } from './max-portada/max-portada.component';
+import {appRouter} from './app.router';
+import {MaxHeaderModule} from './max-header/max-header.module';
+import {MatToolbarModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MaxHeaderComponent,
-    MaxPortadaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatTabsModule,
-    MatSidenavModule
+    appRouter,
+    MaxHeaderModule,
+    MatButtonModule,
+    MatToolbarModule
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]
