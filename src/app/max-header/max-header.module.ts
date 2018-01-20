@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {MatTabsModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatTabsModule, MatToolbarModule} from '@angular/material';
 import {MaxHeaderComponent} from './max-header.component';
 import {MaxPortadaModule} from '../max-portada/max-portada.module';
 
@@ -10,6 +10,7 @@ import {MaxPortadaModule} from '../max-portada/max-portada.module';
   imports: [
     MatToolbarModule,
     MatTabsModule,
+    MatButtonModule,
     MaxPortadaModule
   ],
   exports: [
