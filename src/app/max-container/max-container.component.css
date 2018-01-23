@@ -1,0 +1,22 @@
+.max-universe {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.max-main-container {
+  margin: auto;
+  background-color: blue
+}
+
+@media (min-width: 1700px) {
+  .max-main-container {
+    width: 1186.6253px;
+  }
+}
+
+@media (min-width: 1000px){
+  .max-main-container {
+    width: 844.2344px;
+  }
+}

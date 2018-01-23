@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { MaxContainerComponent } from './max-container/max-container.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaxContainerComponent
   ],
   imports: [
     BrowserModule
