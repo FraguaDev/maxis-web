@@ -1,19 +1,21 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 
-import {AppComponent} from './app.component';
+import { AppComponent } from './app.component';
+import { MaxContainerComponent } from './max-container/max-container.component';
 
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {appRouter} from './app.router';
 import {MaxHeaderModule} from './max-header/max-header.module';
-import {MatToolbarModule} from '@angular/material';
+import {MatGridListModule, MatToolbarModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaxContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -28,5 +30,4 @@ import {MatButtonModule} from '@angular/material/button';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }

@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./max-portada.component.css']
 })
 export class MaxPortadaComponent implements OnInit {
-
+  tiles = [
+    {text: 'One', cols: 2, rows: 2, color: 'darkgreen'},
+    {text: 'Two', cols: 2, rows: 2, color: 'secondary'},
+    {text: 'Three', cols: 2, rows: 2, color: 'primary'},
+    {text: 'Four', cols: 2, rows: 2, color: 'secondary'},
+  ];
   constructor() { }
 
   ngOnInit() {
