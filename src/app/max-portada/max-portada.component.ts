@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-max-portada',
@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaxPortadaComponent implements OnInit {
   tiles = [
-    {text: 'One', cols: 2, rows: 2, color: 'darkgreen'},
+    {text: 'One', cols: 6, rows: 1, color: 'darkgreen'},
     {text: 'Two', cols: 2, rows: 2, color: 'secondary'},
     {text: 'Three', cols: 2, rows: 2, color: 'primary'},
     {text: 'Four', cols: 2, rows: 2, color: 'secondary'},
   ];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
