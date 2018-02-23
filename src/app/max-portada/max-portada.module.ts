@@ -3,10 +3,14 @@ import {MaxPortadaComponent} from './max-portada.component';
 import {MaxPortadaRouter} from './max-portada.router';
 import {MatCardModule, MatGridListModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
+import {MaxTileComponent} from '../max-tile/max-tile.component';
 
 
 @NgModule({
-  declarations: [MaxPortadaComponent],
+  declarations: [
+    MaxPortadaComponent,
+    MaxTileComponent
+  ],
   imports: [
     CommonModule,
     MatCardModule,
@@ -14,7 +18,8 @@ import {CommonModule} from '@angular/common';
     MatGridListModule
   ],
   exports: [
-    MaxPortadaComponent
+    MaxPortadaComponent,
+    MaxTileComponent
   ]
 })
 

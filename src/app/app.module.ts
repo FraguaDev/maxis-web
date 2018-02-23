@@ -11,6 +11,7 @@ import {appRouter} from './app.router';
 import {MaxHeaderModule} from './max-header/max-header.module';
 import {MatGridListModule, MatToolbarModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
+import { MaxTileComponent } from './max-tile/max-tile.component';
 
 @NgModule({
   declarations: [

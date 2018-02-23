@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MaxTileModel} from '../max-tile/max-tile.component.model';
 
 @Component({
   selector: 'app-max-portada',
@@ -6,13 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./max-portada.component.css']
 })
 export class MaxPortadaComponent implements OnInit {
+
+  templateTest = '<div><h2>KIKI</h2><p>KIKIKIKIKI</p></div>';
+  development: MaxTileModel = {
+    title: 'Desarrollo',
+    text: 'Desarrollos :O',
+    style: {
+      color: 'green',
+      width: '100%',
+      height: '100%'
+    }
+  };
   tiles = [
-    {text: 'One', cols: 2, rows: 2, color: 'darkgreen'},
-    {text: 'Two', cols: 2, rows: 2, color: 'secondary'},
-    {text: 'Three', cols: 2, rows: 2, color: 'primary'},
-    {text: 'Four', cols: 2, rows: 2, color: 'secondary'},
+    {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
+    {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
+    {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
+    {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
   ];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
