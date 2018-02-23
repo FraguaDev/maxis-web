@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+<<<<<<< HEAD
+import {MaxTileModel} from '../max-tile/max-tile.component.model';
+=======
+>>>>>>> 737ba87a2261b956e2a92c9f9941cebb077b7047
 
 @Component({
   selector: 'app-max-portada',
@@ -18,10 +22,17 @@ export class MaxPortadaComponent implements OnInit {
     }
   };
   tiles = [
+<<<<<<< HEAD
     {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
     {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
     {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
     {maxTile: this.development, cols: 2, rows: 2, style: 'url(../assets/img/fl.jpg)'},
+=======
+    {text: 'One', cols: 6, rows: 1, color: 'darkgreen'},
+    {text: 'Two', cols: 2, rows: 2, color: 'secondary'},
+    {text: 'Three', cols: 2, rows: 2, color: 'primary'},
+    {text: 'Four', cols: 2, rows: 2, color: 'secondary'},
+>>>>>>> 737ba87a2261b956e2a92c9f9941cebb077b7047
   ];
 
   constructor() {

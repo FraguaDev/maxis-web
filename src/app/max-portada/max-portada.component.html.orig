@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title ngClass="max-header">¿Qué es Maximiliano De Pietro?</mat-card-title>
+</mat-card>
+<<<<<<< HEAD
+<mat-grid-list cols="4" rowHeight="200px" *ngIf="tiles" [style.background]="'white'">
+  <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.style">
+    <app-max-tile [maxTile]="tile.maxTile" ngClass="full"></app-max-tile>
+=======
+<mat-grid-list cols="6" rowHeight="200px">
+  <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+    {{ tile.text }}
+>>>>>>> 737ba87a2261b956e2a92c9f9941cebb077b7047
+  </mat-grid-tile>
+</mat-grid-list>
