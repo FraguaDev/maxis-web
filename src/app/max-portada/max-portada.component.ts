@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MaxTileModel} from '../max-tile/max-tile.component.model';
 
 @Component({
   selector: 'app-max-portada',
@@ -7,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaxPortadaComponent implements OnInit {
 
-  templateTest = '<div><h2>KIKI</h2><p>KIKIKIKIKI</p></div>';
   development: MaxTileModel = {
     title: 'Desarrollo',
     text: 'Desarrollos :O',
