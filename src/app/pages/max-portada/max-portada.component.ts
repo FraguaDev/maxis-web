@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MaxTileModel} from '../max-tile/max-tile.component.model';
+import {MaxTileModel} from '../../components/max-tile/max-tile.component.model';
 
 @Component({
   selector: 'app-max-portada',
