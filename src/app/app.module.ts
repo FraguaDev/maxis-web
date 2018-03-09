@@ -1,34 +1,34 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-
-import { AppComponent } from './app.component';
-import { MaxContainerComponent } from './components/max-container/max-container.component';
-
-
+import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {appRouter} from './app.router';
+import {appRouter} from './app-routing.module';
+import {MaxHeaderComponent} from './components/max-header/max-header.component';
+import {MatCardModule, MatGridListModule} from '@angular/material';
+import {MaxPortadaModule} from './pages/max-portada/max-portada.module';
+import {MaxTileModule} from './components/max-tile/max-tile.module';
+import {MaxContainerComponent} from './components/max-container/max-container.component';
 import {MaxHeaderModule} from './components/max-header/max-header.module';
-import {MatGridListModule, MatToolbarModule} from '@angular/material';
-import {MatButtonModule} from '@angular/material/button';
-import { MaxTileComponent } from './components/max-tile/max-tile.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MaxContainerComponent
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     appRouter,
-    MaxHeaderModule,
-    MatButtonModule,
-    MatToolbarModule
+    MatCardModule,
+    MatGridListModule,
+    MaxPortadaModule,
+    MaxTileModule,
+    MaxHeaderModule
   ],
-  exports: [
+  exports: [],
+  declarations: [
+    AppComponent,
+    MaxContainerComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

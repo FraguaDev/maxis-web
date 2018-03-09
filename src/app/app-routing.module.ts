@@ -3,8 +3,13 @@ import {ModuleWithProviders} from '@angular/core';
 
 export const router: Routes = [
   {
-    path: 'app',
-    loadChildren: './max-portada/max-portada.module#MaxPortadaModule'
+    path: 'max-portada',
+    loadChildren: './pages/max-portada/max-portada.module#MaxPortadaModule'
+  },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
 

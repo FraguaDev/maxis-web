@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {MatButtonModule, MatTabsModule, MatToolbarModule} from '@angular/material';
 import {MaxHeaderComponent} from './max-header.component';
-import {MaxPortadaModule} from '../max-portada/max-portada.module';
 
 @NgModule({
   declarations: [
@@ -10,13 +9,11 @@ import {MaxPortadaModule} from '../max-portada/max-portada.module';
   imports: [
     MatToolbarModule,
     MatTabsModule,
-    MatButtonModule,
-    MaxPortadaModule
+    MatButtonModule
   ],
   exports: [
     MaxHeaderComponent,
-    MatTabsModule,
-    MaxPortadaModule
+    MatTabsModule
   ],
   providers: []
 })

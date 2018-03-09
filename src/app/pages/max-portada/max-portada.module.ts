@@ -1,28 +1,26 @@
 import {NgModule} from '@angular/core';
 import {MaxPortadaComponent} from './max-portada.component';
-import {MaxPortadaRouter} from './max-portada.router';
-import {MatCardModule, MatGridListModule} from '@angular/material';
+import {MaxPortadaRoutingModule} from './max-portada-routing.module';
 import {CommonModule} from '@angular/common';
-import {MaxTileComponent} from '../../components/max-tile/max-tile.component';
-import {MaxTypewriterComponent} from '../../components/max-typewriter/max-typewriter.component';
+import {MatCardModule, MatGridListModule} from '@angular/material';
+import {MaxTileModule} from '../../components/max-tile/max-tile.module';
+import {MaxHeaderModule} from '../../components/max-header/max-header.module';
 
 
 @NgModule({
-  declarations: [
-    MaxPortadaComponent,
-    MaxTileComponent,
-    MaxTypewriterComponent
-  ],
   imports: [
     CommonModule,
+    MaxPortadaRoutingModule,
     MatCardModule,
-    MaxPortadaRouter,
-    MatGridListModule
+    MatGridListModule,
+    MaxTileModule,
+    MaxHeaderModule
   ],
   exports: [
-    MaxPortadaComponent,
-    MaxTileComponent,
-    MaxTypewriterComponent
+    MaxPortadaComponent
+  ],
+  declarations: [
+    MaxPortadaComponent
   ]
 })
 

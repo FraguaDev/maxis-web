@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MaxTileModel} from '../../components/max-tile/max-tile.component.model';
 
 @Component({
