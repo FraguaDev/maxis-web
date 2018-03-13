@@ -12,7 +12,7 @@ export class MaxTileComponent implements OnInit {
     title: 'Empty',
     text: 'Empty',
     style: {
-      color: 'blue'
+      color: 'primmary'
     }
   };
   // page: string;

@@ -4,7 +4,6 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {appRouter} from './app-routing.module';
-import {MaxHeaderComponent} from './components/max-header/max-header.component';
 import {MatCardModule, MatGridListModule} from '@angular/material';
 import {MaxPortadaModule} from './pages/max-portada/max-portada.module';
 import {MaxTileModule} from './components/max-tile/max-tile.module';
