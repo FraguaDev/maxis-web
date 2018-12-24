@@ -1,4 +1,7 @@
 # maxis-web
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/FraguaDev/maxis-web.svg)](https://greenkeeper.io/)
+
 La web del Maxi
 # MaxiWeb
 
