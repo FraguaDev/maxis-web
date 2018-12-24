@@ -1,14 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>MaxiWeb</title>
-  <base href="/">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>MaxiWeb</title>
+    <base href="/">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBt9oMZM9sKvryjmM3lKhKTb9P7M4xDKnA",
+        authDomain: "maxis-web-52c23.firebaseapp.com",
+        databaseURL: "https://maxis-web-52c23.firebaseio.com",
+        projectId: "maxis-web-52c23",
+        storageBucket: "maxis-web-52c23.appspot.com",
+        messagingSenderId: "105830726450"
+    };
+    firebase.initializeApp(config);
+</script>
+<app-root></app-root>
 </body>
 </html>
