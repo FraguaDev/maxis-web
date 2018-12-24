@@ -1,0 +1,39 @@
+@import '~@angular/material/theming';
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$celtic-app-primary: mat-palette($mat-green, 900);
+$celtic-app-accent: mat-palette($mat-green, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$celtic-app-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$celtic-app-theme: mat-dark-theme($celtic-app-primary, $celtic-app-accent, $celtic-app-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+
+// TEAL
+$teal-app-primary: mat-palette($mat-teal, 900);
+$teal-app-accent: mat-palette($mat-teal, A100, A200, A400);
+$teal-app-warn: mat-palette($mat-red);
+$teal-app-theme: mat-dark-theme($teal-app-primary, $teal-app-accent, $teal-app-warn);
+
+
+
+@include angular-material-theme($celtic-app-theme);
+
+@mixin celtic-grid-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .developer {
+    background-color: mat-color($primary);
+    color: mat-color($accent);
+  }
+}
+
