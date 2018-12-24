@@ -10,15 +10,12 @@ before_script: # commands to run before the build step
 script: # the build step
     - ng build --prod
 
+after_success:
+    - firebase deploy --token $FIREBASE_TOKEN
+
 branches:
     only:
         - master
-
-deploy:
-    provider: firebase
-    token:
-        secure: "byBPtxdK7jLW5mRRsIIneDNXPV2GleLitZ2IhmEh6YONTkZ2mosq74mwFa3mduYXJaJ90Wz+Hq1z9ZnpHz9Gw3p58qCEkRLWT+JnEvJUY3+n+UmuUYmyibWrbHgb/dDJMX7rJgqF1F/Cwnyw69BJ1M1GBSW0EyflTrkFS9y4ouoPNK8lYDHghrcFes9rh/452d9veUd3GHoxFJwCgxdlg8RWE/8LJZj/qniDh+GkHVzvK2pKQ7Z64aKqmbeuSn+yTM1dfyx+yeihOP8x5xppSTBoOfCRkDulvBAf0ilwcL6Yr87ywZ8IUn4nrYn98z3VweA18mzhm9QZSEwfI5Gfv8Fbo5+URr9joIQ9sIYE8dnba2AT924iR85MmE+FwwHxF92bh6CBLy94bI64n6/T5bMDlzVvIsRE1lsJ1WUBC04iK0wBx91P1PmtfTeFi1Ev9qn9sW0UfLNMd8x5eJPWZieQ5QA8AXF/qInK8Du5BRCk9YwWaQwVsiNH6t+fP4eFNiuVFlO94m7qQIwEIp+fUJz245kGlrxhZeAbP9vmGVq40GSKcZcEL/O1Cn0Ioiw26W6EdsuP3pT7WPZp5suuY5YOZW8GHVIy3n5Rce7K7mfxtfJn7VqSG7ot4iqHSbJMeI0A2roId8H6npDXGgTI/6nk2XbpNlxkQrq6g8eNO08="
-    project: $FIREBASE_PROJECT
 
 notifications:
     email: # only receive email when the build status changes (someone broke the build!)
