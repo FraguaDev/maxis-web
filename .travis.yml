@@ -13,6 +13,12 @@ script: # the build step
 after_success:
     - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && firebase deploy --token $FIREBASE_TOKEN --non-interactive
 
+deploy:
+    provider: firebase
+    token:
+        secure: $FIREBASE_TOKEN
+    project: $FIREBASE_PROJECT
+
 notifications:
     email: # only receive email when the build status changes (someone broke the build!)
         on_failure: elwindwalker@gmail.com
