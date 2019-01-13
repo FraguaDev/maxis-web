@@ -1,15 +1,17 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-max-header',
-  templateUrl: './max-header.component.html',
-  styleUrls: ['./max-header.component.css']
+    selector: 'app-max-header',
+    templateUrl: './max-header.component.html',
+    styleUrls: ['./max-header.component.css']
 })
 export class MaxHeaderComponent implements OnInit {
-  @Input() dynamicHeight: true;
-  constructor() { }
+    @Input() dynamicHeight: true;
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }
