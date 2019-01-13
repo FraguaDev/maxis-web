@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MaxTileModel} from '../../components/max-tile/max-tile.component.model';
+import {MaxRoundPhotoModel} from '../../components/max-round-photo/max-round-photo.model';
 
 @Component({
     selector: 'app-max-portada',
@@ -8,6 +9,10 @@ import {MaxTileModel} from '../../components/max-tile/max-tile.component.model';
 })
 export class MaxPortadaComponent implements OnInit {
 
+    roundPhoto: MaxRoundPhotoModel = {
+        width: '300px',
+        photo: '/assets/img/maxi-sq-600.jpg'
+    };
 
     development: MaxTileModel = {
         title: 'Desarrollo',

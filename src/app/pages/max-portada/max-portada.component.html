@@ -1,6 +1,7 @@
 <mat-card md-theme="default">
   <mat-card-title ngClass="max-header">¿Qué es Maximiliano De Pietro?</mat-card-title>
 </mat-card>
+<app-max-round-photo [roundPhoto]="roundPhoto"></app-max-round-photo>
 <mat-grid-list cols="4" rowHeight="200px" *ngIf="tiles" [style.background]="'white'">
   <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.style">
     <app-max-tile [maxTile]="tile.maxTile" ngClass="full {{tile.class}}"></app-max-tile>
